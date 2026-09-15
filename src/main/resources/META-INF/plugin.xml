@@ -1,0 +1,28 @@
+<idea-plugin>
+    <id>dev.ybtam.iris-theme</id>
+    <name>Iris Theme</name>
+    <vendor url="https://github.com/ybtam/iris-intellij-theme">Yi Tam</vendor>
+
+    <description><![CDATA[
+        <p>Iris is a carefully tuned light and dark theme for JetBrains IDEs, including WebStorm.</p>
+        <p>It brings the Iris palette from <a href="https://github.com/pingdotgg/t3code">T3 Code</a> to the IntelliJ Platform with matching UI colors, editor schemes, console colors, syntax highlighting, tabs, tool windows, lists, popups, inputs, status bars, version-control states, and a custom icon.</p>
+        <p>The Iris palette is used under the MIT License. This plugin is independent and is not affiliated with T3 Tools or JetBrains.</p>
+    ]]></description>
+
+    <idea-version since-build="252" />
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <themeProvider id="dev.ybtam.iris-theme.light" path="/themes/iris-light.theme.json" />
+        <themeProvider id="dev.ybtam.iris-theme.dark" path="/themes/iris-dark.theme.json" />
+    </extensions>
+
+    <change-notes><![CDATA[
+        <b>1.0.0</b>
+        <ul>
+            <li>Added Iris Light and Iris Dark themes.</li>
+            <li>Added matching editor and terminal color schemes.</li>
+            <li>Added WebStorm-friendly UI, syntax, console, and VCS colors.</li>
+        </ul>
+    ]]></change-notes>
+</idea-plugin>

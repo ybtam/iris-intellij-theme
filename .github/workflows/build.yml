@@ -1,0 +1,43 @@
+name: Build
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+concurrency:
+  group: build-${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out sources
+        uses: actions/checkout@v6
+
+      - name: Set up Java 21
+        uses: actions/setup-java@v5
+        with:
+          distribution: zulu
+          java-version: 21
+
+      - name: Set up Gradle
+        uses: gradle/actions/setup-gradle@v6
+
+      - name: Validate generated palette inputs
+        run: |
+          python3 tools/generate_theme.py --check
+          python3 -m json.tool source/iris-palette.json >/dev/null
+
+      - name: Build plugin
+        run: ./gradlew buildPlugin
+
+      - name: Verify plugin
+        run: ./gradlew verifyPlugin
+
+      - name: Upload plugin ZIP
+        uses: actions/upload-artifact@v7
+        with:
+          name: iris-intellij-theme
+          path: build/distributions/*.zip

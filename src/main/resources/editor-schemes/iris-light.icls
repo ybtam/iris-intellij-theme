@@ -1,0 +1,398 @@
+<scheme name="Iris Light" version="142" parent_scheme="Default">
+    <option name="LINE_SPACING" value="1.0" />
+    <option name="EDITOR_FONT_SIZE" value="13" />
+    <option name="EDITOR_FONT_NAME" value="JetBrains Mono" />
+    <option name="CONSOLE_FONT_NAME" value="JetBrains Mono" />
+    <option name="EDITOR_LIGATURES" value="true" />
+    <option name="CONSOLE_LIGATURES" value="true" />
+    <option name="CONSOLE_LINE_SPACING" value="1.0" />
+    <option name="CONSOLE_FONT_SIZE" value="13" />
+    <option name="CONSOLE_BOLD_FONT_NAME" value="JetBrains Mono" />
+    <option name="CONSOLE_ITALIC_FONT_NAME" value="JetBrains Mono" />
+    <option name="CONSOLE_BOLD_ITALIC_FONT_NAME" value="JetBrains Mono" />
+    <option name="EDITOR_CARET_ROW_COLOR" value="#F8F7F9" />
+    <option name="CONSOLE_CARET_COLOR" value="#7253B9" />
+    <option name="SELECTION_BACKGROUND" value="#E5E0F0" />
+    <option name="SELECTION_FOREGROUND" value="#241523" />
+    <option name="CARET_COLOR" value="#7253B9" />
+    <option name="RIGHT_MARGIN_COLOR" value="#D6D1DE" />
+    <option name="INDENT_GUIDE_COLOR" value="#D6D1DE" />
+    <option name="SELECTED_INDENT_GUIDE_COLOR" value="#7253B9" />
+    <option name="WHITESPACES_COLOR" value="#766C76" />
+    <option name="GUTTER_BACKGROUND" value="#F8F7F9" />
+    <option name="GUTTER_FOREGROUND" value="#766C76" />
+    <option name="LINE_NUMBERS_COLOR" value="#766C76" />
+    <option name="METHOD_SEPARATORS_COLOR" value="#D6D1DE" />
+    <option name="TEARLINE_COLOR" value="#D6D1DE" />
+    <option name="CONSOLE_BACKGROUND_KEY" value="#F8F7F9" />
+    <option name="CONSOLE_FOREGROUND_KEY" value="#241523" />
+    <option name="CONSOLE_SELECTION_BACKGROUND_KEY" value="#E0D9EE" />
+    <option name="CONSOLE_CARET_COLOR" value="#7253B9" />
+    <option name="CONSOLE_USER_INPUT_KEY" value="#7253B9" />
+    <option name="CONSOLE_SYSTEM_OUTPUT_KEY" value="#766C76" />
+    <option name="CONSOLE_NORMAL_OUTPUT_KEY" value="#241523" />
+    <option name="CONSOLE_ERROR_OUTPUT_KEY" value="#FB2C36" />
+    <option name="CONSOLE_LOG_WARNING_OUTPUT_KEY" value="#FE9A00" />
+    <option name="CONSOLE_LOG_ERROR_OUTPUT_KEY" value="#FB2C36" />
+    <option name="CONSOLE_LOG_DEBUG_OUTPUT_KEY" value="#A82C87" />
+    <option name="CONSOLE_LOG_VERBOSE_OUTPUT_KEY" value="#766C76" />
+    <option name="BREADCRUMBS_CURRENT" value="#241523" />
+    <option name="BREADCRUMBS_DEFAULT" value="#766C76" />
+    <option name="BREADCRUMBS_HOVERED" value="#7253B9" />
+    <option name="BREADCRUMBS_INACTIVE" value="#766C76" />
+  <attributes>
+    <option name="TEXT">
+      <value>
+        <option name="FOREGROUND" value="241523" />
+        <option name="BACKGROUND" value="F8F7F9" />
+        <option name="FONT_TYPE" value="0" />
+      </value>
+    </option>
+    <option name="DEFAULT_IDENTIFIER">
+      <value>
+        <option name="FOREGROUND" value="241523" />
+        <option name="BACKGROUND" value="F8F7F9" />
+        <option name="FONT_TYPE" value="0" />
+      </value>
+    </option>
+    <option name="LINE_COMMENT">
+      <value>
+        <option name="FOREGROUND" value="766C76" />
+        <option name="BACKGROUND" value="F8F7F9" />
+        <option name="FONT_TYPE" value="2" />
+      </value>
+    </option>
+    <option name="BLOCK_COMMENT">
+      <value>
+        <option name="FOREGROUND" value="766C76" />
+        <option name="BACKGROUND" value="F8F7F9" />
+        <option name="FONT_TYPE" value="2" />
+      </value>
+    </option>
+    <option name="DOC_COMMENT">
+      <value>
+        <option name="FOREGROUND" value="766C76" />
+        <option name="BACKGROUND" value="F8F7F9" />
+        <option name="FONT_TYPE" value="2" />
+      </value>
+    </option>
+    <option name="STRING">
+      <value>
+        <option name="FOREGROUND" value="7253B9" />
+        <option name="BACKGROUND" value="F8F7F9" />
+        <option name="FONT_TYPE" value="0" />
+      </value>
+    </option>
+    <option name="VALID_STRING_ESCAPE">
+      <value>
+        <option name="FOREGROUND" value="7253B9" />
+        <option name="BACKGROUND" value="F8F7F9" />
+        <option name="FONT_TYPE" value="1" />
+      </value>
+    </option>
+    <option name="INVALID_STRING_ESCAPE">
+      <value>
+        <option name="FOREGROUND" value="FB2C36" />
+        <option name="BACKGROUND" value="F8F7F9" />
+        <option name="FONT_TYPE" value="1" />
+        <option name="EFFECT_TYPE" value="1" />
+        <option name="EFFECT_COLOR" value="FB2C36" />
+      </value>
+    </option>
+    <option name="NUMBER">
+      <value>
+        <option name="FOREGROUND" value="A82C87" />
+        <option name="BACKGROUND" value="F8F7F9" />
+        <option name="FONT_TYPE" value="0" />
+      </value>
+    </option>
+    <option name="KEYWORD">
+      <value>
+        <option name="FOREGROUND" value="7253B9" />
+        <option name="BACKGROUND" value="F8F7F9" />
+        <option name="FONT_TYPE" value="1" />
+      </value>
+    </option>
+    <option name="FUNCTION_DECLARATION">
+      <value>
+        <option name="FOREGROUND" value="7253B9" />
+        <option name="BACKGROUND" value="F8F7F9" />
+        <option name="FONT_TYPE" value="1" />
+      </value>
+    </option>
+    <option name="FUNCTION_CALL">
+      <value>
+        <option name="FOREGROUND" value="241523" />
+        <option name="BACKGROUND" value="F8F7F9" />
+        <option name="FONT_TYPE" value="0" />
+      </value>
+    </option>
+    <option name="METHOD_CALL">
+      <value>
+        <option name="FOREGROUND" value="241523" />
+        <option name="BACKGROUND" value="F8F7F9" />
+        <option name="FONT_TYPE" value="0" />
+      </value>
+    </option>
+    <option name="PARAMETER">
+      <value>
+        <option name="FOREGROUND" value="EDEAF4" />
+        <option name="BACKGROUND" value="F8F7F9" />
+        <option name="FONT_TYPE" value="0" />
+      </value>
+    </option>
+    <option name="LOCAL_VARIABLE">
+      <value>
+        <option name="FOREGROUND" value="241523" />
+        <option name="BACKGROUND" value="F8F7F9" />
+        <option name="FONT_TYPE" value="0" />
+      </value>
+    </option>
+    <option name="INSTANCE_FIELD">
+      <value>
+        <option name="FOREGROUND" value="766C76" />
+        <option name="BACKGROUND" value="F8F7F9" />
+        <option name="FONT_TYPE" value="0" />
+      </value>
+    </option>
+    <option name="STATIC_FIELD">
+      <value>
+        <option name="FOREGROUND" value="A82C87" />
+        <option name="BACKGROUND" value="F8F7F9" />
+        <option name="FONT_TYPE" value="0" />
+      </value>
+    </option>
+    <option name="CLASS_NAME">
+      <value>
+        <option name="FOREGROUND" value="7253B9" />
+        <option name="BACKGROUND" value="F8F7F9" />
+        <option name="FONT_TYPE" value="1" />
+      </value>
+    </option>
+    <option name="INTERFACE_NAME">
+      <value>
+        <option name="FOREGROUND" value="7253B9" />
+        <option name="BACKGROUND" value="F8F7F9" />
+        <option name="FONT_TYPE" value="1" />
+      </value>
+    </option>
+    <option name="ENUM_NAME">
+      <value>
+        <option name="FOREGROUND" value="7253B9" />
+        <option name="BACKGROUND" value="F8F7F9" />
+        <option name="FONT_TYPE" value="1" />
+      </value>
+    </option>
+    <option name="TYPE_PARAMETER">
+      <value>
+        <option name="FOREGROUND" value="7253B9" />
+        <option name="BACKGROUND" value="F8F7F9" />
+        <option name="FONT_TYPE" value="0" />
+      </value>
+    </option>
+    <option name="CONSTANT">
+      <value>
+        <option name="FOREGROUND" value="A82C87" />
+        <option name="BACKGROUND" value="F8F7F9" />
+        <option name="FONT_TYPE" value="1" />
+      </value>
+    </option>
+    <option name="PREDEFINED_SYMBOL">
+      <value>
+        <option name="FOREGROUND" value="7253B9" />
+        <option name="BACKGROUND" value="F8F7F9" />
+        <option name="FONT_TYPE" value="0" />
+      </value>
+    </option>
+    <option name="METADATA">
+      <value>
+        <option name="FOREGROUND" value="241523" />
+        <option name="BACKGROUND" value="F8F7F9" />
+        <option name="FONT_TYPE" value="2" />
+      </value>
+    </option>
+    <option name="ANNOTATION">
+      <value>
+        <option name="FOREGROUND" value="A82C87" />
+        <option name="BACKGROUND" value="F8F7F9" />
+        <option name="FONT_TYPE" value="0" />
+      </value>
+    </option>
+    <option name="REGEXP">
+      <value>
+        <option name="FOREGROUND" value="A82C87" />
+        <option name="BACKGROUND" value="F8F7F9" />
+        <option name="FONT_TYPE" value="0" />
+      </value>
+    </option>
+    <option name="MARKUP_TAG">
+      <value>
+        <option name="FOREGROUND" value="7253B9" />
+        <option name="BACKGROUND" value="F8F7F9" />
+        <option name="FONT_TYPE" value="1" />
+      </value>
+    </option>
+    <option name="MARKUP_ATTRIBUTE">
+      <value>
+        <option name="FOREGROUND" value="EDEAF4" />
+        <option name="BACKGROUND" value="F8F7F9" />
+        <option name="FONT_TYPE" value="0" />
+      </value>
+    </option>
+    <option name="MARKUP_ENTITY">
+      <value>
+        <option name="FOREGROUND" value="A82C87" />
+        <option name="BACKGROUND" value="F8F7F9" />
+        <option name="FONT_TYPE" value="0" />
+      </value>
+    </option>
+    <option name="TEMPLATE_LANGUAGE_COLOR">
+      <value>
+        <option name="FOREGROUND" value="7253B9" />
+        <option name="BACKGROUND" value="F8F7F9" />
+        <option name="FONT_TYPE" value="0" />
+      </value>
+    </option>
+    <option name="LABEL">
+      <value>
+        <option name="FOREGROUND" value="7253B9" />
+        <option name="BACKGROUND" value="F8F7F9" />
+        <option name="FONT_TYPE" value="0" />
+      </value>
+    </option>
+    <option name="OPERATION_SIGN">
+      <value>
+        <option name="FOREGROUND" value="7253B9" />
+        <option name="BACKGROUND" value="F8F7F9" />
+        <option name="FONT_TYPE" value="0" />
+      </value>
+    </option>
+    <option name="LOGIC_OPERATION_SIGN">
+      <value>
+        <option name="FOREGROUND" value="7253B9" />
+        <option name="BACKGROUND" value="F8F7F9" />
+        <option name="FONT_TYPE" value="0" />
+      </value>
+    </option>
+    <option name="BRACES">
+      <value>
+        <option name="FOREGROUND" value="241523" />
+        <option name="BACKGROUND" value="F8F7F9" />
+        <option name="FONT_TYPE" value="0" />
+      </value>
+    </option>
+    <option name="BRACKETS">
+      <value>
+        <option name="FOREGROUND" value="241523" />
+        <option name="BACKGROUND" value="F8F7F9" />
+        <option name="FONT_TYPE" value="0" />
+      </value>
+    </option>
+    <option name="PARENTHESES">
+      <value>
+        <option name="FOREGROUND" value="241523" />
+        <option name="BACKGROUND" value="F8F7F9" />
+        <option name="FONT_TYPE" value="0" />
+      </value>
+    </option>
+    <option name="COMMA">
+      <value>
+        <option name="FOREGROUND" value="766C76" />
+        <option name="BACKGROUND" value="F8F7F9" />
+        <option name="FONT_TYPE" value="0" />
+      </value>
+    </option>
+    <option name="DOT">
+      <value>
+        <option name="FOREGROUND" value="766C76" />
+        <option name="BACKGROUND" value="F8F7F9" />
+        <option name="FONT_TYPE" value="0" />
+      </value>
+    </option>
+    <option name="SEMICOLON">
+      <value>
+        <option name="FOREGROUND" value="766C76" />
+        <option name="BACKGROUND" value="F8F7F9" />
+        <option name="FONT_TYPE" value="0" />
+      </value>
+    </option>
+    <option name="TODO_DEFAULT">
+      <value>
+        <option name="FOREGROUND" value="FE9A00" />
+        <option name="BACKGROUND" value="F8F7F9" />
+        <option name="FONT_TYPE" value="1" />
+      </value>
+    </option>
+    <option name="ERRORS_ATTRIBUTES">
+      <value>
+        <option name="FOREGROUND" value="FB2C36" />
+        <option name="BACKGROUND" value="F8F7F9" />
+        <option name="FONT_TYPE" value="0" />
+        <option name="EFFECT_TYPE" value="1" />
+        <option name="EFFECT_COLOR" value="FB2C36" />
+      </value>
+    </option>
+    <option name="WARNING_ATTRIBUTES">
+      <value>
+        <option name="FOREGROUND" value="FE9A00" />
+        <option name="BACKGROUND" value="F8F7F9" />
+        <option name="FONT_TYPE" value="0" />
+        <option name="EFFECT_TYPE" value="1" />
+        <option name="EFFECT_COLOR" value="FE9A00" />
+      </value>
+    </option>
+    <option name="DEPRECATED_SYMBOL">
+      <value>
+        <option name="FOREGROUND" value="766C76" />
+        <option name="BACKGROUND" value="F8F7F9" />
+        <option name="FONT_TYPE" value="0" />
+        <option name="EFFECT_TYPE" value="4" />
+        <option name="EFFECT_COLOR" value="766C76" />
+      </value>
+    </option>
+    <option name="BAD_CHARACTER">
+      <value>
+        <option name="FOREGROUND" value="FB2C36" />
+        <option name="BACKGROUND" value="F8F7F9" />
+        <option name="FONT_TYPE" value="1" />
+        <option name="EFFECT_TYPE" value="1" />
+        <option name="EFFECT_COLOR" value="FB2C36" />
+      </value>
+    </option>
+    <option name="SEARCH_RESULT">
+      <value>
+        <option name="FOREGROUND" value="241523" />
+        <option name="BACKGROUND" value="E5E0F0" />
+        <option name="FONT_TYPE" value="0" />
+      </value>
+    </option>
+    <option name="TEXT_SEARCH_RESULT">
+      <value>
+        <option name="FOREGROUND" value="241523" />
+        <option name="BACKGROUND" value="E5E0F0" />
+        <option name="FONT_TYPE" value="0" />
+      </value>
+    </option>
+    <option name="MATCHED_BRACE">
+      <value>
+        <option name="FOREGROUND" value="241523" />
+        <option name="BACKGROUND" value="E5E0F0" />
+        <option name="FONT_TYPE" value="1" />
+      </value>
+    </option>
+    <option name="UNMATCHED_BRACE">
+      <value>
+        <option name="FOREGROUND" value="FB2C36" />
+        <option name="BACKGROUND" value="F8E6EA" />
+        <option name="FONT_TYPE" value="1" />
+      </value>
+    </option>
+    <option name="IDENTIFIER_UNDER_CARET">
+      <value>
+        <option name="FOREGROUND" value="241523" />
+        <option name="BACKGROUND" value="E5E0F0" />
+        <option name="FONT_TYPE" value="0" />
+      </value>
+    </option>
+  </attributes>
+</scheme>
