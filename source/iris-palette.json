@@ -3,7 +3,7 @@
   "label": "Iris",
   "source": {
     "repository": "https://github.com/pingdotgg/t3code",
-    "file": "https://github.com/pingdotgg/t3code/blob/main/packages/shared/src/themePalettes.ts",
+    "file": "https://github.com/pingdotgg/t3code/blob/d07ffbe351a10e1001f6d8eafa5b7533b8bd7e23/packages/shared/src/themePalettes.ts",
     "commit": "d07ffbe351a10e1001f6d8eafa5b7533b8bd7e23",
     "license": "MIT"
   },

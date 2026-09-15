@@ -40,12 +40,13 @@ def main() -> None:
     light = extract_object(iris, "colors: {", "  },\n  variants:")
     dark = extract_object(iris, "dark: {", "    },\n  },\n  sidebarArtwork")
 
+    pinned_source_url = UPSTREAM_URL.replace("/blob/main/", f"/blob/{args.commit}/")
     payload = {
         "id": "iris",
         "label": "Iris",
         "source": {
             "repository": "https://github.com/pingdotgg/t3code",
-            "file": UPSTREAM_URL,
+            "file": pinned_source_url,
             "commit": args.commit,
             "license": "MIT",
         },
