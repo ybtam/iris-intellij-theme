@@ -298,15 +298,19 @@ def main() -> None:
         colors = palette_for(appearance)
         if len(colors) != 57:
             raise SystemExit(f"{appearance} palette has {len(colors)} roles, expected 57")
+        theme_text = json.dumps(theme_json(appearance, colors), indent=2) + "\n"
+        scheme_text = editor_scheme(appearance, colors)
         if args.check:
-            print(f"{appearance}: {len(colors)} roles; {len(set(colors.values()))} rendered colors")
+            theme_path = THEMES / f"iris-{appearance}.theme.json"
+            scheme_path = SCHEMES / f"iris-{appearance}.icls"
+            if not theme_path.exists() or theme_path.read_text(encoding="utf-8") != theme_text:
+                raise SystemExit(f"Generated theme is out of date: {theme_path}")
+            if not scheme_path.exists() or scheme_path.read_text(encoding="utf-8") != scheme_text:
+                raise SystemExit(f"Generated editor scheme is out of date: {scheme_path}")
+            print(f"{appearance}: {len(colors)} roles; generated files are current")
             continue
-        (THEMES / f"iris-{appearance}.theme.json").write_text(
-            json.dumps(theme_json(appearance, colors), indent=2) + "\n", encoding="utf-8"
-        )
-        (SCHEMES / f"iris-{appearance}.icls").write_text(
-            editor_scheme(appearance, colors), encoding="utf-8"
-        )
+        (THEMES / f"iris-{appearance}.theme.json").write_text(theme_text, encoding="utf-8")
+        (SCHEMES / f"iris-{appearance}.icls").write_text(scheme_text, encoding="utf-8")
         print(f"Generated Iris {appearance} theme and editor scheme")
 
 
