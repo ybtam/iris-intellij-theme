@@ -16,7 +16,7 @@ if ! command -v "$java_command" >/dev/null 2>&1; then
     echo 'Pre-push: Java 21 or newer is required; set JAVA_HOME and PATH.' >&2
     exit 1
 fi
-java_version=$("$java_command" -version 2>&1 | sed -n '1s/.*version "\([0-9]*\).*/\1/p')
+java_version=$("$java_command" -version 2>&1 | sed -n -e 's/^openjdk version "\([0-9]*\).*/\1/p' -e 's/^java version "\([0-9]*\).*/\1/p')
 if [ -z "$java_version" ] || [ "$java_version" -lt 21 ]; then
     echo 'Pre-push: Java 21 or newer is required; set JAVA_HOME and PATH.' >&2
     exit 1
