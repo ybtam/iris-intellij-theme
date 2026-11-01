@@ -2,7 +2,17 @@
 
 ## Development setup
 
-Install Java 21, clone the repository, and run:
+Install Java 21 and Python 3.9 or newer, clone the repository, and install the pre-push hook:
+
+```bash
+./tools/install-hooks.sh
+```
+
+Run this once per clone; it is safe to repeat. The installer preserves existing hooks and refuses a configured `core.hooksPath`. If you use custom hooks, integrate `tools/pre-push` into your existing pre-push hook manually. If you move the clone, remove its stale project hook symlink yourself before reinstalling.
+
+The hook checks that generated theme resources match the palette and runs `./gradlew buildPlugin`. Both checks must pass for the push to continue. It checks the working tree, so uncommitted changes affect the result. Gradle may download the wrapper and IntelliJ Platform dependencies and writes build outputs and caches. If generated resources are out of date, run `python3 tools/generate_theme.py` and review the resulting changes.
+
+Run the full local checks as well:
 
 ```bash
 ./gradlew buildPlugin

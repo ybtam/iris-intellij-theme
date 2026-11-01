@@ -1,0 +1,28 @@
+#!/bin/sh
+set -eu
+
+cd "$(git rev-parse --show-toplevel)"
+
+if ! command -v python3 >/dev/null 2>&1 || ! python3 -c 'import sys; sys.exit(sys.version_info < (3, 9))'; then
+    echo 'Pre-push: Python 3.9 or newer is required.' >&2
+    exit 1
+fi
+if [ -n "${JAVA_HOME:-}" ]; then
+    java_command="$JAVA_HOME/bin/java"
+else
+    java_command=java
+fi
+if ! command -v "$java_command" >/dev/null 2>&1; then
+    echo 'Pre-push: Java 21 or newer is required; set JAVA_HOME and PATH.' >&2
+    exit 1
+fi
+java_version=$("$java_command" -version 2>&1 | sed -n -e 's/^openjdk version "\([0-9]*\).*/\1/p' -e 's/^java version "\([0-9]*\).*/\1/p')
+if [ -z "$java_version" ] || [ "$java_version" -lt 21 ]; then
+    echo 'Pre-push: Java 21 or newer is required; set JAVA_HOME and PATH.' >&2
+    exit 1
+fi
+
+echo 'Pre-push: checking generated theme resources...'
+python3 tools/generate_theme.py --check
+echo 'Pre-push: building the plugin...'
+./gradlew buildPlugin </dev/null
